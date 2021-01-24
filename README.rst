@@ -8,7 +8,7 @@
 
 .. |pypi_versions| image:: https://img.shields.io/pypi/v/wlspeaker?style=flat-square
     :alt: pypi version
-    :target: https://pypi.org/project/prettyfi/
+    :target: https://pypi.org/project/wlspeaker/
 
 
 Wlspeaker lib
@@ -24,11 +24,13 @@ usage
 *****
 
 Start the server:
+
 .. code:: bash
 
     wls_server
 
 On the client machine run:
+
 .. code:: bash
 
     wls_client
