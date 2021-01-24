@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "wlspeaker"
+version = "0.1.0"
+description = "Enable sound sharing with pulseaudio."
+authors = ["Pavel Kirilin <win10@list.ru>"]
+readme = "README.rst"
+
+[tool.isort]
+profile = 'black'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pulsectl = "^20.5.1"
+icmplib = "^2.0.1"
+PyAudio = "^0.2.11"
+loguru = "^0.5.3"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+mypy = "^0.800"
+wemake-python-styleguide = "^0.14.1"
+pre-commit = "^2.9.3"
+
+[tool.poetry.scripts]
+wls_server = 'wlspeaker.server:main'
+wls_client  = 'wlspeaker.client:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
