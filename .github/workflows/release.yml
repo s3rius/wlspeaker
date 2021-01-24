@@ -23,6 +23,7 @@ jobs:
 
       - name: Install python dependencies 👨🏻‍💻
         run: |
+          sudo apt-get install libasound-dev portaudio19-dev
           pip install -U pip
           pip install poetry
           poetry install
