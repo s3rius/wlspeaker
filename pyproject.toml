@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "wlspeaker"
-version = "0.1.1"
+version = "0.1.2"
 description = "Enable sound sharing with pulseaudio."
 authors = ["Pavel Kirilin <win10@list.ru>"]
 readme = "README.rst"
@@ -20,6 +20,8 @@ flake8 = "^3.8.4"
 mypy = "^0.800"
 wemake-python-styleguide = "^0.14.1"
 pre-commit = "^2.9.3"
+yesqa = "^1.2.2"
+autoflake = "^1.4"
 
 [tool.poetry.scripts]
 wls_server = 'wlspeaker.server:main'

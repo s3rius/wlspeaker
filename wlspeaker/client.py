@@ -14,7 +14,7 @@ def main():
             logger.info(f"Trying enable {neighbour}")
             pulse.module_load(
                 "module-tunnel-sink-new",
-                "channels=2 "  # noqa: WPS221
+                "channels=2 "
                 "rate=44100 "
                 f"server={neighbour} "
                 f"sink_name=wl_speaker_{neighbour} "
