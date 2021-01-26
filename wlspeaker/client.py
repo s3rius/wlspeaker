@@ -15,7 +15,7 @@ def main():
             pulse.module_load(
                 "module-tunnel-sink-new",
                 "channels=2 "
-                "rate=44100 "
+                "rate=48000 "
                 f"server={neighbour} "
                 f"sink_name=wl_speaker_{neighbour} "
                 f"sink_properties=device.description=wl_{neighbour}",
